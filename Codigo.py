@@ -43,3 +43,14 @@ def cadastrar_produtos(tabela):
         pyautogui.press("enter")
         pyautogui.scroll(5000)
 
+def main():
+    url = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
+    email = "pythonimpressionador@gmail.com"
+    senha = "sua senha"
+    abrir_navegador(url)
+    fazer_login(email, senha)
+    tabela_produtos = importar_dados_produto()
+    cadastrar_produtos(tabela_produtos)
+
+if __name__ == "__main__":
+    main()
