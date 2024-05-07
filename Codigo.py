@@ -21,5 +21,9 @@ def fazer_login(email, senha):
     time.sleep(1) 
     pyautogui.click(x=955, y=660)
     time.sleep(3)
-
+    
+def importar_dados_produto():
+    tabela = pd.read_csv("produtos.csv")
+    print(tabela)
+    return tabela
 
